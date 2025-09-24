@@ -2,7 +2,7 @@ OVERVIEW
 --------
 ![img1](/Docs/img_1.png)
 
-*ucb045-rgb-cmfdv1-stm32-example* is a ready to use example for and [*UCB045-RGB-CMFDV1 – Capacitive Touch Button*](https://unisystem.com/product/accessories/ucb045-rgb-cmfdv1-capacitive-touch-button) [*STM32 NUCLEO-F429ZI*](https://www.st.com/en/evaluation-tools/nucleo-f429zi.html) development board.
+*ucb045-rgb-cmfdv1-stm32-example* is a ready to use example for [*UCB045-RGB-CMFDV1 – Capacitive Touch Button*](https://unisystem.com/product/accessories/ucb045-rgb-cmfdv1-capacitive-touch-button) and [*STM32 NUCLEO-F429ZI*](https://www.st.com/en/evaluation-tools/nucleo-f429zi.html) development board.
 
 UCB045-RGB-CMFDV1 – Capacitive Touch Button
 -------------------------------------------
