@@ -101,6 +101,25 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+    if (!HAL_GPIO_ReadPin(RP132_GRD_GPIO_Port, RP132_GRD_Pin)) {
+
+      HAL_GPIO_WritePin(RP132_LED_Red_GPIO_Port, RP132_LED_Red_Pin, RESET);
+      HAL_GPIO_WritePin(RP132_LED_Green_GPIO_Port, RP132_LED_Green_Pin, SET);
+      HAL_GPIO_WritePin(RP132_LED_Blue_GPIO_Port, RP132_LED_Blue_Pin, SET);
+
+    } else if (!HAL_GPIO_ReadPin(RP132_BTN1_GPIO_Port, RP132_BTN1_Pin)) {
+
+      HAL_GPIO_WritePin(RP132_LED_Red_GPIO_Port, RP132_LED_Red_Pin, SET);
+      HAL_GPIO_WritePin(RP132_LED_Green_GPIO_Port, RP132_LED_Green_Pin, RESET);
+      HAL_GPIO_WritePin(RP132_LED_Blue_GPIO_Port, RP132_LED_Blue_Pin, SET);
+
+    } else {
+
+      HAL_GPIO_WritePin(RP132_LED_Red_GPIO_Port, RP132_LED_Red_Pin, RESET);
+      HAL_GPIO_WritePin(RP132_LED_Green_GPIO_Port, RP132_LED_Green_Pin, RESET);
+      HAL_GPIO_WritePin(RP132_LED_Blue_GPIO_Port, RP132_LED_Blue_Pin, RESET);
+
+    }
   }
   /* USER CODE END 3 */
 }
